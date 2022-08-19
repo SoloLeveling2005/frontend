@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var choise = prompt("Введите номер задания(1-10)")
+		if (choise == 1) {
+			let name = prompt("Введите ваше имя")
+			alert("Привет, " + name)
+
+
+
+		} else if (choise == 2) {
+			let how_much_year = prompt("Введите ваш год рождения")
+			const now = 2022
+			alert("Сейчас вам: " + (now - how_much_year))
+
+		} else if (choise == 3) {
+			let lenght = prompt("Введите длину стороны квадрата")
+			alert("Периметр вашего квадрата = " + lenght*4)
+
+		} else if (choise == 4) {
+			// alert("S=πR²")
+			let r = prompt("Введите радиус круга")
+			alert("Площадь окружности вашего круга равен = " + (3.14*(r**2)))
+		} else if (choise == 5) {
+			let km = prompt("Введите сколько вы должны пробежать (км)")
+			let time = prompt("Введите за какой промежуток времни вы должны пробежать (часов)")
+			let km_time = km/time
+			alert("Вы должны бежать со скоростью: " + km_time + "км/ч")
+		} else if (choise == 6) {
+			const dollar = 0.99138
+			let dollar_user = prompt("Введите количество долларов")
+			alert("У вас есть = " + (dollar_user*dollar))
+		} else if (choise == 7) {
+			let volume = prompt("Введите сколько ГБ у вас на флешке")
+			const gb_mb = 1024
+			let file = 820
+			alert("В вашу флешку поместиться " + Math.floor((volume*gb_mb)/file) + " таких(ой) файлов")
+		} else if (choise == 8) {
+			let coll = prompt("Введите количество денег")
+			let price = prompt("Введите цену шоколадоки")
+			alert("Вы можете купить " + Math.floor(coll/price) + " шоколадок, останется у вас " + (coll%price) + " тенге")
+		} else if (choise == 9) {
+			let coll = prompt("Введите трехзначное число")
+			let one_coll = coll%10 + "" + Math.floor(coll%100/10) + "" + Math.floor(coll/100)
+			alert(one_coll)
+		} else if (choise == 10) {
+			let coll = prompt("Введите число")
+			if (Math.floor(coll/2) == coll/2) {
+				alert("Число четное")
+			}
+			else{
+				alert("Число не четное")
+			}
+		} 
+	</script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+    <script>
+        // Первое
+        // let number_one = +prompt("Введите начало диапазона")
+        // let number_two = +prompt("Введите конец диапазона")
+        // for (var number = 0;number_one<=number_two;number_one++) {
+        //     number += number_one
+        // }
+        // alert("Сумма чисел вашего диапазона = " + number)
+
+
+
+
+
+
+
+        // Второе 
+        // let number_one = +prompt("Введите первое число")
+        // let number_two = +prompt("Введите второе число")  
+        // for (var i = number_one;i>0;i--) {
+        //     if(i == 1) {
+        //         alert("У этих чисел нет НОД") 
+        //         break 
+        //     }
+        //     if (number_two%i == 0 && number_one%i == 0) {
+        //         alert(i) 
+        //         break
+        //     }
+            
+        // }
+
+
+
+
+
+
+        // Третье
+        // let number = +prompt("Введите число")
+        // for (var i = number;i>0;i--) {
+        //     if (number%i == 0) {
+        //         alert(i) 
+        //     }  
+        // }
+
+
+
+
+
+
+        // Четвертое
+        // let number = prompt("Введите число")
+        // var number_end = 0
+        // for (let i in number) {
+        //     number_end = i
+        // }
+        // alert(+number_end + 1)
+
+
+
+
+
+        // Пятое
+        // let numbers = prompt("Введите числа через пробел").split(" ")
+        // var zero_chisla = ""
+        // var less_chisla = ""
+        // var more_chisla = ""
+        // var odd = ""
+        // var even = ""
+        // for (let i in numbers) {
+        //     var chislo = Number(numbers[i]); 
+        //     if (chislo == 0) {zero_chisla += chislo + " ";} else if (chislo < 0) {less_chisla += chislo + " ";} else if (chislo > 0) {more_chisla += chislo  + " ";}
+        //     if (chislo%2 == 0) {even += chislo + " ";} else {odd += chislo + " ";}   
+        // }
+        // alert("Числа равные нулю: " + zero_chisla + "\n" + "Числа меньше нуля: " + less_chisla + "\n" + "Числа больше нудя: " + more_chisla + "\n" + "Четные числа: " + even + "\n" + "Нечетные числа:" + odd)
+    
+    
+    
+    
+        // Шестое
+        // let solve = prompt("Введите выражение(3+4 или 5-2 и т.д. или нет)") + "";
+        // function solved(solve) {
+        //     if ((solve+"") == "нет") {
+        //         alert("ok");
+        //     } else {
+        //         solve = (solve + "").split("+");
+        //         if (solve.length == 2) {
+        //             alert("Равно = "+(+solve[0] + +solve[1]));
+        //             solved(solve);
+        //         }  else {
+        //             solve = (solve + "").split("-");
+        //             if (solve.length == 2) {
+        //                 alert("Равно = "+(+solve[0] - +solve[1]));
+        //                 solved(solve);
+        //             } else {
+        //                 solve = (solve + "").split("*");
+        //                 if (solve.length == 2) {
+        //                     alert("Равно = "+(+solve[0] * +solve[1]));
+        //                     solved(solve);
+        //                 } else {
+        //                     solve = (solve + "").split("/");
+        //                     if (solve.length == 2) {
+        //                         alert("Равно = "+(+solve[0] / +solve[1]));
+        //                         solved(solve);
+        //                     }
+        //                 }
+                        
+        //             } 
+        //         }
+        //     }
+        // }
+        // solved(solve)
+
+
+
+
+
+        // Седьмое
+        // let number = prompt("Введите число")
+        // let tell = prompt("Насколько сдвинуть")
+        // let all = ""
+        // let no_all = ""
+        // for (let i in number) {
+        //     if ((i+1) <= number) {
+        //         all += number[i]
+                
+        //     } else {
+        //         no_all += number[i]
+        //     }
+        // }
+        // alert(no_all + all)
+
+
+
+
+        // Восьмое
+        // let number = prompt("Введите число")
+        // let days = ["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"]
+        // var ok = ""
+        // while (ok == "") {
+        //     for (let i in days) {
+        //         let do_or_no = prompt("Вывести следующий день недели? (Нажмите ок или нет)")
+        //         if(do_or_no === ""){
+        //             alert(days[i])
+        //         } else {
+        //             alert('Ok')
+        //             ok = "1"
+        //             break
+        //         }
+        //     }
+        // }
+
+
+
+        // Девятое
+        // var tabl = ""
+        // var chisla = [1,2,3,4,5,6,7,8,9,10]
+        // var chisla2 = [2,3,4,5,6,7,8,9]
+        // // var chisla = [1,2,3,4,5,6,7,8,9,10]
+        // // var chisla2 = [2,3]
+        // for (var i in chisla2) {
+        //     tabl += `Таблица умножения на ${chisla2[i]} \n`;
+        //     for (var ii in chisla) {
+        //         tabl += `${chisla2[i]}*${chisla[ii]}=${+chisla2[i] * +chisla[ii]} \n`;
+        //     }
+        // }
+        // alert("Также таблицу умножение можете посмотреть в консоли: \n"+tabl);
+        // console.log(tabl);
+
+        let N = +prompt("Загадайте число от 0 до 100")
+        let max = 100
+        let min = 0
+        let ch = 50
+        while (ch)  {
+            let chislo = prompt(`Ваше число ${Math.floor((max+min)/2)}?`) 
+            if (chislo == ">") {
+                min = Math.floor((max+min)/2)
+            } else if (chislo == "<") {
+                max = Math.floor((max+min)/2)
+            } else if (chislo == "==") {
+                break
+            }
+
+
+
+            
+        }
+
+    </script>
+</body>
+</html>
